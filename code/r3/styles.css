@@ -3,17 +3,19 @@ body {
     font-style: normal;
 }
 
+.text {
+    font-size: 18px;
+
+}
+
 h1,
 .text {
     text-align: justify;
 }
 
 @media (max-width: 767px) {
-    .text {
-        font-size: 10px;
-    }
-
-    .video-container {
+    .video-container,
+    .text-container {
         width: 480px;
     }
 
@@ -23,12 +25,17 @@ h1,
 }
 
 @media (min-width: 768px) {
-    .text {
-        font-size: 18px;
+    .video-container,
+    .text-container {
+        width: 752px;
+        display: inline-block;
+        vertical-align: middle;
     }
 
-    .video-container {
-        width: 752px;
+    .text-container {
+        padding-left: 30px;
+        padding-right: 30px;
+        box-sizing: border-box;
     }
     
     video {
