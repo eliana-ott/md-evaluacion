@@ -1,0 +1,37 @@
+body {
+    font-family: sans-serif;
+    font-style: normal;
+}
+
+h1,
+.text {
+    text-align: justify;
+}
+
+@media (max-width: 767px) {
+    .text {
+        font-size: 10px;
+    }
+
+    .video-container {
+        width: 480px;
+    }
+
+    video {
+        width: 480px;
+    }
+}
+
+@media (min-width: 768px) {
+    .text {
+        font-size: 18px;
+    }
+
+    .video-container {
+        width: 752px;
+    }
+    
+    video {
+        width: 752px;
+    }
+}
